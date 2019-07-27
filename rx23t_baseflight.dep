@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>675644347</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\hard_drive\ov7725\ov7725.h</file>
+            <file>$PROJ_DIR$\hard_drive\ov7725\sccb.c</file>
+            <file>$PROJ_DIR$\hard_drive\lcd\LCD_ASCII.h</file>
+            <file>$PROJ_DIR$\hard_drive\ov7725\ov7725.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_cgc_user.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_intprg.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_main.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_port.h</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_icu.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_icu.h</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_sci.h</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_port.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_port_user.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_sci.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_cgc.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_sci_user.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_systeminit.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_tmr.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_tmr_user.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_icu_user.c</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_userdefine.h</file>
+            <file>$PROJ_DIR$\hard_drive\lcd\st7735s\lcd_st7735s.c</file>
+            <file>$PROJ_DIR$\hard_drive\lcd\st7735s\lcd_st7735s.h</file>
+            <file>$PROJ_DIR$\hard_drive\lcd\lcd.c</file>
+            <file>$PROJ_DIR$\hard_drive\lcd\lcd.h</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_cgc.h</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_tmr.h</file>
+            <file>$PROJ_DIR$\cg_7725\cg_src\r_cg_macrodriver.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlrxflln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_tmr_user.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\bsp_sccb.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\bsp_ov7725.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_tmr.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_icu.pbi</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_cgc.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lcd_st7735s.pbi</file>
+            <file>$PROJ_DIR$\app\ov7725\bsp_ov7725.c</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_port.c</file>
+            <file>$TOOLKIT_DIR$\inc\iorx23t.h</file>
+            <file>$PROJ_DIR$\app\ov7725\ov7725.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_port_user.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_icu_user.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_userdefine.h</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_port.h</file>
+            <file>$PROJ_DIR$\app\lcd\st7735s\lcd_st7735s.c</file>
+            <file>$TOOLKIT_DIR$\lib\rtrx2fll.a</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_sci_user.c</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_icu.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_icu.o</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_tmr_user.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\ov7725.pbi</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_intprg.c</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_tmr.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\bsp_ov7725.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_cgc.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_sci_user.pbi</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_port_user.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+            <file>$PROJ_DIR$\app\ov7725\bsp_ov7725.h</file>
+            <file>$TOOLKIT_DIR$\lib\strx2l.a</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_cgc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_tmr_user.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\rx23t_baseflight.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_icu.__cstat.et</file>
+            <file>$PROJ_DIR$\app\lcd\lcd.c</file>
+            <file>$PROJ_DIR$\Debug\List\rx23t_baseflight.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\ov7725.o</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_sci.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\lcd.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\bsp_sccb.o</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_tmr.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_cgc_user.__cstat.et</file>
+            <file>$PROJ_DIR$\app\ov7725\sccb.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_icu_user.o</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\ov7725.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Exe\rx23t_baseflight.out</file>
+            <file>$TOOLKIT_DIR$\config\lnkr5f523t5.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_icu_user.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_icu_user.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_cgc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\lcd.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\sccb.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\bsp_ov7725.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_port_user.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_sci_user.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_sci.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_port_user.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_port.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_port.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_intprg.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_intprg.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_cgc_user.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_sci.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\sccb.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_cgc.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_systeminit.o</file>
+            <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lcd.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\dbgrxflld.a</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_sci.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_systeminit.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\sccb.__cstat.et</file>
+            <file>$PROJ_DIR$\app\ov7725\bsp_sccb.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\bsp_sccb.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\lcd_st7735s.__cstat.et</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_icu.c</file>
+            <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlrxflln.h</file>
+            <file>$PROJ_DIR$\hard_drive\user\delay.c</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_cgc_user.c</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_macrodriver.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_sci_user.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_tmr_user.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_tmr.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\app\lcd\lcd.h</file>
+            <file>$PROJ_DIR$\hard_drive\user\delay.h</file>
+            <file>$PROJ_DIR$\app\ov7725\ov7725.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_cgc_user.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_main.__cstat.et</file>
+            <file>$PROJ_DIR$\app\ov7725\sccb.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_systeminit.__cstat.et</file>
+            <file>$PROJ_DIR$\app\ov7725\bsp_sccb.c</file>
+            <file>$PROJ_DIR$\app\lcd\LCD_ASCII.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_port.pbi</file>
+            <file>$PROJ_DIR$\hard_drive\ov7725\sccb.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_intprg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\lcd_st7735s.o</file>
+            <file>$PROJ_DIR$\cg_Navi\cg_src\r_cg_systeminit.c</file>
+            <file>$PROJ_DIR$\app\lcd\st7735s\lcd_st7735s.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_tmr.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\r_cg_sci.o</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\hard_drive\ov7725\sccb.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 102</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 105 117 45 92 20 63 32 116 84 27 124 37 109 41 135</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 135 7 20 84 92 45 37 117 116 32 109 124 63 27 41 105</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hard_drive\ov7725\ov7725.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 72</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 2 92 9 7 27 10 20 117 24 26 135 63 32 116 105 22 0 84 124 37 109 41</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 0 135 20 84 92 45 37 117 116 32 109 124 63 7 27 41 105 24 22 2 9 26 10</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_cgc_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 128</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 124 37 45 20 27 117 25 105 92 84 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 25 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_intprg.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 136</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124 37 45 41 27 117 20 105 84 92 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 129</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 140</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 126 26 45 92 9 0 105 7 32 20 25 10 24 41 135 63 109 27 84 124 37 117 116 22 2</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 25 9 7 26 10 0 135 20 84 45 37 117 116 32 109 124 63 24 22 2 126</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_icu.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 124 37 45 20 27 117 9 105 84 92 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 9 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_port.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 134</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 96</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 92 41 20 7 32 105 63 109 27 84 124 37 117 116</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 7 20 84 45 37 117 116 32 109 124 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_port_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 91</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 92 41 20 7 32 105 63 109 27 84 124 37 117 116</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 7 20 84 45 37 117 116 32 109 124 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_sci.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 142</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 124 37 45 20 27 117 10 41 84 92 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 10 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_cgc.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 103</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 124 37 45 20 27 117 25 41 92 84 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 25 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_sci_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 121</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 60</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 93</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124 37 45 20 41 27 117 10 105 84 92 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 10 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_systeminit.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 131</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 104</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 45 92 26 9 20 7 32 25 10 41 63 109 27 84 124 37 117 116</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 25 9 7 26 10 20 84 45 37 117 116 32 109 124 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_tmr.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 141</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 124 37 45 20 27 117 26 41 84 92 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 26 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_tmr_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 122</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 124 37 45 20 27 117 26 105 84 92 116 7 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 26 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_icu_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 20 124 37 45 0 105 27 117 9 7 41 84 92 116 135 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 9 0 135 20 84 45 37 117 116 32 109 124 63 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hard_drive\lcd\st7735s\lcd_st7735s.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 137</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 92 7 117 63 32 116 105 22 84 27 124 37 109 41 20</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 20 84 92 45 37 117 116 32 109 124 63 7 27 41 105 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hard_drive\lcd\lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 74</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124 45 27 20 41 84 92 37 109 22 2 7 63 32 117 116 105 24</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 24 22 20 84 92 45 37 117 116 32 109 124 63 7 27 41 105 2</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 82 71</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_cgc.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 103</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 124 37 45 46 120 117 66 41 92 84 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 66 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\ov7725\bsp_ov7725.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 109 84 92 37 51 112 120 124 45 41 47 46 63 32 117 116 105 64</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 64 112 46 84 92 45 37 117 116 32 109 124 63 47 120 41 105 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_port.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 134</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 96</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 92 46 105 47 32 41 63 109 120 84 124 37 117 116</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 47 46 84 45 37 117 116 32 109 124 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\ov7725\ov7725.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 72</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78 127</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\lcd\st7735s\lcd_st7735s.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 114</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 92 7 117 63 32 116 105 139 84 27 124 37 109 41 20</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_sci_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 121</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 60</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 93</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124 37 45 46 41 120 117 108 105 84 92 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 108 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_tmr_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 122</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 124 37 45 46 120 117 76 105 84 92 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 76 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_intprg.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 136</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124 37 45 41 120 117 46 105 84 92 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_tmr.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 141</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 124 37 45 46 120 117 76 41 84 92 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 76 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_port_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 91</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 92 41 46 47 32 105 63 109 120 84 124 37 117 116</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 47 46 84 45 37 117 116 32 109 124 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\lcd\lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 106</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 74</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 139 116 105 63 92 32 133 7 45 117 27 20 84 124 37 109 41 125</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_sci.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 142</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 124 37 45 46 120 117 108 41 84 92 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 108 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 129</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 140</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45 46 133 76 47 51 64 105 66 108 125 41 92 63 37 109 139 120 112 84 124 32 117 116</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 66 51 47 76 108 64 112 46 84 45 37 117 116 32 109 124 63 125 139 133</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\rx23t_baseflight.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 71</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 83 30 74 137 72 87 128 52 79 136 140 96 91 142 93 104 34 67 102 65 49 28 107</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_icu_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46 124 37 45 64 105 120 117 51 47 41 84 92 116 112 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 51 64 112 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_icu.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 124 37 45 46 120 117 51 105 84 92 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 51 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\hard_drive\user\delay.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 126 41 92 27</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 27 41 105 92 126</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_cgc_user.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 128</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41 124 37 45 46 120 117 66 105 92 84 116 47 63 32 109</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 66 46 84 45 37 117 116 32 109 124 63 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\ov7725\sccb.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 102</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\app\ov7725\bsp_sccb.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 113</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47 105 117 45 92 46 63 32 116 84 120 124 37 109 41 112</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 112 47 46 84 92 45 37 117 116 32 109 124 63 120 41 105</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cg_Navi\cg_src\r_cg_systeminit.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 131</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 104</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 45 92 76 51 46 47 32 66 108 41 63 109 120 84 124 37 117 116</file>
+                </tool>
+                <tool>
+                    <name>ICCRX</name>
+                    <file> 120 41 105 92 66 51 47 76 108 46 84 45 37 117 116 32 109 124 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\cg_7725\cg_src\r_cg_main.c</name>
+            <tool>C-STAT</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\app\ov7725\ov7725.c</name>
+            <tool>ICCRX</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\app\lcd\st7735s\lcd_st7735s.c</name>
+            <tool>ICCRX</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\app\lcd\lcd.c</name>
+            <tool>ICCRX</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\app\ov7725\sccb.c</name>
+            <tool>ICCRX</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

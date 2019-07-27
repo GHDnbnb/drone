@@ -1,0 +1,705 @@
+###############################################################################
+#
+# IAR ELF Linker V3.10.2.3647 for Renesas RX              13/Aug/2017  07:26:47
+# Copyright 2009-2017 IAR Systems AB.
+#
+#    Output file  =  D:\rx23t_baseflight\Debug\Exe\rx23t_baseflight.out
+#    Map file     =  D:\rx23t_baseflight\Debug\List\rx23t_baseflight.map
+#    Command line =  
+#        -f C:\Users\lu\AppData\Local\Temp\EW5629.tmp
+#        (D:\rx23t_baseflight\Debug\Obj\delay.o
+#        D:\rx23t_baseflight\Debug\Obj\lcd.o
+#        D:\rx23t_baseflight\Debug\Obj\lcd_st7735s.o
+#        D:\rx23t_baseflight\Debug\Obj\ov7725.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_cgc.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_cgc_user.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_icu.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_icu_user.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_intprg.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_main.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_port.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_port_user.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_sci.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_sci_user.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_systeminit.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_tmr.o
+#        D:\rx23t_baseflight\Debug\Obj\r_cg_tmr_user.o
+#        D:\rx23t_baseflight\Debug\Obj\sccb.o -o
+#        D:\rx23t_baseflight\Debug\Exe\rx23t_baseflight.out --map
+#        D:\rx23t_baseflight\Debug\List\rx23t_baseflight.map --config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0\rx\CONFIG\lnkr5f523t5.icf" --config_def _USTACK_SIZE=0x800
+#        --config_def _ISTACK_SIZE=0x800 --config_def _HEAP_SIZE=0x800 --entry
+#        __iar_program_start --debug_lib --vfe)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__SystemLibrary            = DLib
+__calling_conv             = abi10
+__core                     = 2
+__dlib_file_descriptor     = 0
+__dlib_full_locale_support = 0
+__double_size              = 32
+__endian                   = l
+__enum_size                = var
+__fpu                      = 1
+__int_size                 = 32
+__lock_R10                 = 0
+__lock_R11                 = 0
+__lock_R12                 = 0
+__lock_R13                 = 0
+__lock_R8                  = 0
+__lock_R9                  = 0
+__rt_version               = 5
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0xffffff80 { ro section .exceptvect };
+"A1":  place at 0xfffffffc { ro section .resetvect };
+"ROM24":
+       place in [from 0xfffe0000 to 0xffffffff] {
+          ro section .code24*, ro section .data24* };
+"RAM24":
+       place in [from 0x00000004 to 0x000027ff] { rw section .data24* };
+"ROM32":
+       place in [from 0xfffe0000 to 0xffffffff] { ro };
+"STACKS":
+       place at end of [0x00000004-0x000027ff] { block STACKS };
+initialize by copy { rw, ro section D, ro section D_1, ro section D_2 };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"RAM24", part 1 of 2:                       0x98
+  RAM24-1                     0x00000004    0x97  <Init block>
+    .data24.data     inited   0x00000004     0x2  lcd_st7735s.o [1]
+    .data24.data     inited   0x00000006     0x2  lcd_st7735s.o [1]
+    .data24.data     inited   0x00000008    0x8e  ov7725.o [1]
+    .data24.data     inited   0x00000096     0x1  ov7725.o [1]
+    .data24.data     inited   0x00000097     0x1  r_cg_main.o [1]
+    .data24.data     inited   0x00000098     0x1  r_cg_main.o [1]
+    .data24.data     inited   0x00000099     0x1  r_cg_main.o [1]
+    .data24.data     inited   0x0000009a     0x1  r_cg_main.o [1]
+                            - 0x0000009b    0x97
+
+"RAM24", part 2 of 2:                      0x32c
+  .data24.bss        zero     0x0000009c   0x258  ov7725.o [1]
+  .data24.bss        zero     0x000002f4    0xb6  ov7725.o [1]
+  .data24.bss        zero     0x000003aa     0x2  ov7725.o [1]
+  .data24.bss        zero     0x000003ac     0x4  r_cg_sci.o [1]
+  .data24.bss        zero     0x000003b0     0x4  r_cg_sci.o [1]
+  .data24.bss        zero     0x000003b4     0x2  ov7725.o [1]
+  .data24.bss        zero     0x000003b6     0x2  r_cg_main.o [1]
+  .data24.bss        zero     0x000003b8     0x2  r_cg_sci.o [1]
+  .data24.bss        zero     0x000003ba     0x2  r_cg_sci.o [1]
+  .data24.bss        zero     0x000003bc     0x2  r_cg_sci.o [1]
+  .data24.bss        zero     0x000003be     0x1  lcd_st7735s.o [1]
+  .data24.bss        zero     0x000003bf     0x1  ov7725.o [1]
+  .data24.bss        zero     0x000003c0     0x1  ov7725.o [1]
+  .data24.bss        zero     0x000003c1     0x1  ov7725.o [1]
+  .data24.bss        zero     0x000003c2     0x1  ov7725.o [1]
+  .data24.bss        zero     0x000003c3     0x1  ov7725.o [1]
+  .data24.bss        zero     0x000003c4     0x1  ov7725.o [1]
+  .data24.bss        zero     0x000003c5     0x1  r_cg_icu_user.o [1]
+  .data24.bss        zero     0x000003c6     0x1  r_cg_main.o [1]
+                            - 0x000003c7   0x32b
+
+"STACKS":                                 0x1000
+  STACKS                      0x00001800  0x1000  <Block>
+    USTACK                    0x00001800   0x800  <Block>
+      USTACK         uninit   0x00001800   0x800  <Block tail>
+    ISTACK                    0x00002000   0x800  <Block>
+      ISTACK         uninit   0x00002000   0x800  <Block tail>
+                            - 0x00002800  0x1000
+
+"ROM24":                                   0x700
+  .data24.rodata     const    0xfffe0000   0x600  lcd.o [1]
+  Initializer bytes  const    0xfffe0600    0x98  <for RAM24-1>
+  .data24.rodata     const    0xfffe0698     0x9  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06a1     0x6  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06a7     0x6  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06ad     0x6  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06b3     0x6  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06bc     0x4  lcd.o [1]
+  .data24.rodata     const    0xfffe06c0     0x4  lcd.o [1]
+  .data24.rodata     const    0xfffe06c4     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06c8     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06cc     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06d0     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06d4     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06d8     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06dc     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06e0     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06e4     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06e8     0x4  ov7725.o [1]
+  .data24.rodata     const    0xfffe06ec     0x4  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06f0     0x4  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06f4     0x4  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06f8     0x4  r_cg_main.o [1]
+  .data24.rodata     const    0xfffe06fc     0x4  r_cg_main.o [1]
+                            - 0xfffe0700   0x700
+
+"ROM32":                                  0x3ac5
+  .text              ro code  0xfffe0700  0x1a8b  lcd_st7735s.o [1]
+  .text              ro code  0xfffe218b    0x2a  delay.o [1]
+  .text              ro code  0xfffe21b5   0xa83  ov7725.o [1]
+  .text              ro code  0xfffe2c38   0x262  sccb.o [1]
+  .text              ro code  0xfffe2e9a    0x4e  r_cg_icu_user.o [1]
+  .text              ro code  0xfffe2ee8    0x2f  sprintf.o [4]
+  .text              ro code  0xfffe2f17   0x302  lcd.o [1]
+  .text              ro code  0xfffe3219    0xe6  r_cg_sci.o [1]
+  .text              ro code  0xfffe3300   0x4bb  xprintfsmall_nomb.o [4]
+  .text              ro code  0xfffe37bc    0x12  strchr.o [4]
+  .data32.rodata     const    0xfffe37ce     0x6  xprintfsmall_nomb.o [4]
+  .text              ro code  0xfffe37d4     0xe  strlen.o [4]
+  .text              ro code  0xfffe37e2     0x2  def_nmi_handlers.o [5]
+  .text              ro code  0xfffe37e4    0x17  memchr.o [4]
+  .inttable                   0xfffe37fc   0x400  <Block>
+    .inttable        const    0xfffe37fc   0x400  interrupt_table.o [4]
+  .text              ro code  0xfffe3bfc   0x144  r_cg_sci_user.o [1]
+  .text              ro code  0xfffe3d40   0x143  r_cg_main.o [1]
+  .text              ro code  0xfffe3e83    0x3f  r_cg_icu.o [1]
+  .text              ro code  0xfffe3ec2    0x37  r_cg_tmr.o [1]
+  .text              ro code  0xfffe3ef9    0xbb  r_cg_port.o [1]
+  .text              ro code  0xfffe3fb4    0x89  r_cg_cgc.o [1]
+  .text              ro code  0xfffe403d    0x4b  r_cg_systeminit.o [1]
+  .text              ro code  0xfffe4088    0x31  cstartup.o [5]
+  .text              ro code  0xfffe40bc    0x1f  data_init.o [4]
+  .text              ro code  0xfffe40dc     0x4  exit.o [4]
+  .text              ro code  0xfffe40e0     0x8  cexit.o [4]
+  .text              ro code  0xfffe40e8    0x12  __dbg_xxexit.o [3]
+  .text              ro code  0xfffe40fc     0x1  __dbg_break.o [3]
+  .iar.init_table    const    0xfffe4100    0x24  - Linker created -
+  .text              ro code  0xfffe4124    0x20  interrupt_table.o [4]
+  .text              ro code  0xfffe4144     0xf  __dbg_abort.o [3]
+  .text              ro code  0xfffe4154    0x1e  copy_init2.o [4]
+  .text              ro code  0xfffe4174    0x1a  zero_init2.o [4]
+  .switch.rodata     const    0xfffe4190     0xe  xprintfsmall_nomb.o [4]
+  .switch.rodata     const    0xfffe41a0     0xc  ov7725.o [1]
+  .text              ro code  0xfffe41ac     0xb  xsprout.o [4]
+  .switch.rodata     const    0xfffe41b8     0x9  ov7725.o [1]
+  .text              ro code  0xfffe41c1     0x4  r_cg_intprg.o [1]
+                            - 0xfffe41c5  0x3ac5
+
+"A0":                                       0x7c
+  .exceptvect                 0xffffff80    0x7c  <Block>
+    .exceptvect      const    0xffffff80    0x7c  exceptvect_rxv2.o [5]
+                            - 0xfffffffc    0x7c
+
+"A1":                                        0x4
+  .resetvect         const    0xfffffffc     0x4  resetvect_rxv2.o [5]
+                            - 0x00000000     0x4
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (___iar_zero_init2)
+    1 destination range, total size 0x32b:
+          0x0000009c  0x32b
+
+Copy (___iar_copy_init2)
+    1 source range, total size 0x98 (100% of destination):
+          0xfffe0600   0x98
+    1 destination range, total size 0x97:
+          0x00000004   0x97
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+D:\rx23t_baseflight\Debug\Obj: [1]
+    delay.o                   42
+    lcd.o                    770    1 544
+    lcd_st7735s.o          6 795        4        5
+    ov7725.o               2 691      204      935
+    r_cg_cgc.o               137
+    r_cg_icu.o                63
+    r_cg_icu_user.o           78                 1
+    r_cg_intprg.o              4
+    r_cg_main.o              323       57        7
+    r_cg_port.o              187
+    r_cg_sci.o               230                14
+    r_cg_sci_user.o          324
+    r_cg_systeminit.o         75
+    r_cg_tmr.o                55
+    sccb.o                   610
+    ----------------------------------------------
+    Total:                12 384    1 809      962
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dbgrxflld.a: [3]
+    __dbg_abort.o             15
+    __dbg_break.o              1
+    __dbg_xxexit.o            18
+    ----------------------------------------------
+    Total:                    34
+
+dlrxflln.a: [4]
+    cexit.o                    8
+    copy_init2.o              30
+    data_init.o               31
+    exit.o                     4
+    interrupt_table.o         32    1 024
+    memchr.o                  23
+    sprintf.o                 47
+    strchr.o                  18
+    strlen.o                  14
+    xprintfsmall_nomb.o    1 211       20
+    xsprout.o                 11
+    zero_init2.o              26
+    ----------------------------------------------
+    Total:                 1 455    1 044
+
+strx2l.a: [5]
+    cstartup.o                49
+    def_nmi_handlers.o         2
+    exceptvect_rxv2.o                 124
+    resetvect_rxv2.o                    4
+    ----------------------------------------------
+    Total:                    51      128
+
+    Gaps                      11       11
+    Linker created                     37    4 096
+--------------------------------------------------
+    Grand Total:          13 935    3 029    5 058
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.exceptvect$$Base       0xffffff80          --   Gb  - Linker created -
+.exceptvect$$Limit      0xfffffffc          --   Gb  - Linker created -
+.iar.init_table$$Base   0xfffe4100          --   Gb  - Linker created -
+.iar.init_table$$Limit  0xfffe4124          --   Gb  - Linker created -
+.inttable$$Base         0xfffe37fc          --   Gb  - Linker created -
+.inttable$$Limit        0xfffe3bfc          --   Gb  - Linker created -
+ISTACK$$Base            0x00002000          --   Gb  - Linker created -
+ISTACK$$Limit           0x00002800          --   Gb  - Linker created -
+Region$$Table$$Base     0xfffe4100          --   Gb  - Linker created -
+Region$$Table$$Limit    0xfffe4124          --   Gb  - Linker created -
+STACKS$$Base            0x00001800          --   Gb  - Linker created -
+STACKS$$Limit           0x00002800          --   Gb  - Linker created -
+USTACK$$Base            0x00001800          --   Gb  - Linker created -
+USTACK$$Limit           0x00002000          --   Gb  - Linker created -
+_BLUE_value             0x000003c1    0x1  Data  Gb  ov7725.o [1]
+_Camera_Data            0x000003aa    0x2  Data  Gb  ov7725.o [1]
+_Camera_FPS             0x000003b4    0x2  Data  Gb  ov7725.o [1]
+_FIFO_GPIO_Config       0xfffe21b5    0xf  Code  Lc  ov7725.o [1]
+_GREEN_value            0x000003c0    0x1  Data  Gb  ov7725.o [1]
+_LCD_ST7735S_dir        0xfffe0700  0x9c9  Code  Gb  lcd_st7735s.o [1]
+_LCD_ST7735S_init       0xfffe10c9  0xe69  Code  Gb  lcd_st7735s.o [1]
+_LCD_ST7735S_ptlon      0xfffe1f32  0x245  Code  Gb  lcd_st7735s.o [1]
+_LCD_char               0xfffe2ff6  0x18f  Code  Gb  lcd.o [1]
+_LCD_init               0xfffe2fcf   0x27  Code  Gb  lcd.o [1]
+_LCD_rectangle          0xfffe2f17   0xb8  Code  Gb  lcd.o [1]
+_LCD_str                0xfffe3185   0x94  Code  Gb  lcd.o [1]
+_LoadInt                0xfffe373c   0x4b  Code  Lc  xprintfsmall_nomb.o [4]
+_OV7725_Brightness      0xfffe23b4   0x62  Code  Gb  ov7725.o [1]
+_OV7725_Color_Saturation
+                        0xfffe2382   0x32  Code  Gb  ov7725.o [1]
+_OV7725_Contrast        0xfffe2416   0x1c  Code  Gb  ov7725.o [1]
+_OV7725_GPIO_Config     0xfffe21c5    0x9  Code  Gb  ov7725.o [1]
+_OV7725_Init            0xfffe21ce   0x8a  Code  Gb  ov7725.o [1]
+_OV7725_Light_Mode      0xfffe2258  0x12a  Code  Gb  ov7725.o [1]
+_OV7725_REG_NUM         0x00000096    0x1  Data  Gb  ov7725.o [1]
+_RED_value              0x000003bf    0x1  Data  Gb  ov7725.o [1]
+_R_CGC_Create           0xfffe3fb4   0x89  Code  Gb  r_cg_cgc.o [1]
+_R_ICU_Create           0xfffe3e83   0x37  Code  Gb  r_cg_icu.o [1]
+_R_ICU_IRQ5_Start       0xfffe3eba    0x8  Code  Gb  r_cg_icu.o [1]
+_R_MAIN_UserInit        0xfffe3dc8   0x52  Code  Lc  r_cg_main.o [1]
+_R_PORT_Create          0xfffe3ef9   0xbb  Code  Gb  r_cg_port.o [1]
+_R_SCI1_Create          0xfffe3219   0x87  Code  Gb  r_cg_sci.o [1]
+_R_SCI1_Serial_Send     0xfffe32cb   0x34  Code  Gb  r_cg_sci.o [1]
+_R_SCI1_Start           0xfffe32a0   0x2b  Code  Gb  r_cg_sci.o [1]
+_R_Systeminit           0xfffe403d   0x43  Code  Lc  r_cg_systeminit.o [1]
+_R_TMR0_Start           0xfffe3ef0    0x9  Code  Gb  r_cg_tmr.o [1]
+_R_TMR_Create           0xfffe3ec2   0x2e  Code  Gb  r_cg_tmr.o [1]
+_SCCB_Ack               0xfffe2cc0   0x28  Code  Lc  sccb.o [1]
+_SCCB_GPIO_Config       0xfffe2c38    0x1  Code  Gb  sccb.o [1]
+_SCCB_NoAck             0xfffe2ce8   0x28  Code  Lc  sccb.o [1]
+_SCCB_ReadByte          0xfffe2e20   0x7a  Code  Gb  sccb.o [1]
+_SCCB_ReceiveByte       0xfffe2d9c   0x4d  Code  Lc  sccb.o [1]
+_SCCB_SendByte          0xfffe2d53   0x49  Code  Lc  sccb.o [1]
+_SCCB_Start             0xfffe2c4a   0x4e  Code  Lc  sccb.o [1]
+_SCCB_Stop              0xfffe2c98   0x28  Code  Lc  sccb.o [1]
+_SCCB_WaitAck           0xfffe2d10   0x43  Code  Lc  sccb.o [1]
+_SCCB_WriteByte         0xfffe2de9   0x37  Code  Gb  sccb.o [1]
+_SCCB_delay             0xfffe2c39   0x11  Code  Lc  sccb.o [1]
+_ST7735S_get_h          0xfffe2177    0xa  Code  Gb  lcd_st7735s.o [1]
+_ST7735S_get_w          0xfffe2181    0xa  Code  Gb  lcd_st7735s.o [1]
+_Sensor_Config          0x00000008   0x8e  Data  Gb  ov7725.o [1]
+_Sensor_IDCode          0x000003c4    0x1  Data  Gb  ov7725.o [1]
+_VSYNC_GPIO_Config      0xfffe21c4    0x1  Code  Lc  ov7725.o [1]
+__LitobSmallNoMb        0xfffe3300   0xdf  Code  Lc  xprintfsmall_nomb.o [4]
+__MDES {Abs}            0xffffffff          --   Gb  r_cg_main.o [1]
+__OFS0 {Abs}            0xffffffff          --   Gb  r_cg_main.o [1]
+__OFS1 {Abs}            0xffffffff          --   Gb  r_cg_main.o [1]
+__PrintfSmallNoMb       0xfffe33e0  0x35c  Code  Gb  xprintfsmall_nomb.o [4]
+__PutcharsSmallNoMb     0xfffe3788   0x33  Code  Lc  xprintfsmall_nomb.o [4]
+__SProut                0xfffe41ac    0xb  Code  Gb  xsprout.o [4]
+___DebugBreak           0xfffe40fc    0x1  Code  Gb  __dbg_break.o [3]
+___NMI_handler          0xfffe41c1    0x2  Code  Gb  r_cg_intprg.o [1]
+___excep_access_inst    0xfffe37e2         Code  Wk  def_nmi_handlers.o [5]
+___exit                 0xfffe40e8   0x12  Code  Gb  __dbg_xxexit.o [3]
+___iar_ForwardingLockFunctions {Abs}
+                        0x00000000          --   Gb  xsyslock.o [4]
+___iar_Memchr           0xfffe37e4   0x17  Code  Gb  memchr.o [4]
+___iar_Strchr           0xfffe37bc   0x12  Code  Gb  strchr.o [4]
+___iar_copy_init2       0xfffe4154   0x1e  Code  Gb  copy_init2.o [4]
+___iar_data_init2       0xfffe40bc   0x1f  Code  Gb  data_init.o [4]
+___iar_zero_init2       0xfffe4174   0x1a  Code  Gb  zero_init2.o [4]
+___interrupt_0          0xfffe41c3         Code  Gb  r_cg_intprg.o [1]
+___interrupt_1          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_10         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_100        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_101        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_102        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_103        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_104        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_105        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_106        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_107        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_108        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_109        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_11         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_110        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_111        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_112        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_113        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_114        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_115        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_116        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_117        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_118        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_119        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_12         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_120        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_121        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_122        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_123        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_124        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_125        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_126        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_127        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_128        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_129        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_13         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_130        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_131        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_132        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_133        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_134        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_135        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_136        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_137        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_138        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_139        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_14         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_140        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_141        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_142        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_143        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_144        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_145        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_146        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_147        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_148        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_149        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_15         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_150        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_151        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_152        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_153        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_154        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_155        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_156        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_157        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_158        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_159        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_16         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_160        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_161        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_162        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_163        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_164        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_165        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_166        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_167        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_168        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_169        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_17         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_170        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_171        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_172        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_173        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_174        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_175        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_176        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_177        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_178        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_179        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_18         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_180        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_181        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_182        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_183        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_184        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_185        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_186        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_187        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_188        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_189        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_19         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_190        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_191        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_192        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_193        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_194        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_195        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_196        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_197        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_198        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_199        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_2          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_20         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_200        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_201        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_202        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_203        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_204        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_205        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_206        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_207        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_208        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_209        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_21         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_210        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_211        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_212        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_213        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_214        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_215        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_216        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_217        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_218        0xfffe3d07         Code  Gb  r_cg_sci_user.o [1]
+___interrupt_219        0xfffe3c91         Code  Gb  r_cg_sci_user.o [1]
+___interrupt_22         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_220        0xfffe3bfc         Code  Gb  r_cg_sci_user.o [1]
+___interrupt_221        0xfffe3c51         Code  Gb  r_cg_sci_user.o [1]
+___interrupt_222        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_223        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_224        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_225        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_226        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_227        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_228        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_229        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_23         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_230        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_231        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_232        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_233        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_234        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_235        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_236        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_237        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_238        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_239        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_24         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_240        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_241        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_242        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_243        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_244        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_245        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_246        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_247        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_248        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_249        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_25         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_250        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_251        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_252        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_253        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_254        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_255        0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_26         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_27         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_28         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_29         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_3          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_30         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_31         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_32         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_33         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_34         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_35         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_36         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_37         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_38         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_39         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_4          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_40         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_41         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_42         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_43         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_44         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_45         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_46         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_47         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_48         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_49         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_5          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_50         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_51         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_52         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_53         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_54         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_55         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_56         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_57         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_58         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_59         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_6          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_60         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_61         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_62         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_63         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_64         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_65         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_66         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_67         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_68         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_69         0xfffe2e9a         Code  Gb  r_cg_icu_user.o [1]
+___interrupt_7          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_70         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_71         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_72         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_73         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_74         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_75         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_76         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_77         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_78         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_79         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_8          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_80         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_81         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_82         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_83         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_84         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_85         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_86         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_87         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_88         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_89         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_9          0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_90         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_91         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_92         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_93         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_94         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_95         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_96         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_97         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_98         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___interrupt_99         0xfffe4124   0x20  Code  Wk  interrupt_table.o [4]
+___low_level_init       0xfffe4080    0x8  Code  Gb  r_cg_systeminit.o [1]
+___privileged_handler   0xfffe37e2         Code  Wk  def_nmi_handlers.o [5]
+___undefined_handler    0xfffe37e2         Code  Wk  def_nmi_handlers.o [5]
+___undefined_interrupt_source_handler
+                        0xfffe37e2         Code  Wk  def_nmi_handlers.o [5]
+__exceptvect            0xffffff80         Data  Gb  exceptvect_rxv2.o [5]
+__exit                  0xfffe40e0         Code  Gb  cexit.o [4]
+__float_placeholder     0xfffe37e2         Code  Wk  def_nmi_handlers.o [5]
+__iar_call_low_level_init
+                        0xfffe40a4         Code  Gb  cstartup.o [5]
+__iar_cstart_end        0xfffe40b9         Code  Gb  cstartup.o [5]
+__iar_main_call         0xfffe40b1         Code  Gb  cstartup.o [5]
+__iar_program_start     0xfffe4088         Code  Gb  cstartup.o [5]
+__iar_reset_vector      0xfffffffc         Data  Gb  resetvect_rxv2.o [5]
+_abort                  0xfffe4144    0xf  Code  Gb  __dbg_abort.o [3]
+_ascii_8x16             0xfffe0000  0x600  Data  Gb  lcd.o [1]
+_camera_black           0xfffe25a0  0x34c  Code  Gb  ov7725.o [1]
+_camera_red             0xfffe28ec  0x34c  Code  Gb  ov7725.o [1]
+_color_tracking         0xfffe2432  0x16e  Code  Gb  ov7725.o [1]
+_default_handler        0xfffe4124   0x20  Code  Gb  interrupt_table.o [4]
+_delay_ms               0xfffe218b   0x2a  Code  Gb  delay.o [1]
+_error                  0x000003b6    0x2  Data  Gb  r_cg_main.o [1]
+_error1                 0x000003c2    0x1  Data  Gb  ov7725.o [1]
+_error2                 0x000003c3    0x1  Data  Gb  ov7725.o [1]
+_exit                   0xfffe40dc    0x4  Code  Gb  exit.o [4]
+_g_sci1_rx_count        0x000003ba    0x2  Data  Gb  r_cg_sci.o [1]
+_g_sci1_rx_length       0x000003bc    0x2  Data  Gb  r_cg_sci.o [1]
+_g_sci1_tx_count        0x000003b8    0x2  Data  Gb  r_cg_sci.o [1]
+_gp_sci1_rx_address     0x000003b0    0x4  Data  Gb  r_cg_sci.o [1]
+_gp_sci1_tx_address     0x000003ac    0x4  Data  Gb  r_cg_sci.o [1]
+_image_feature          0x000002f4   0xb6  Data  Gb  ov7725.o [1]
+_imgBuf                 0x0000009c  0x258  Data  Gb  ov7725.o [1]
+_main                   0xfffe3e1a   0x69  Code  Gb  r_cg_main.o [1]
+_mode1                  0xfffe3dab   0x1d  Code  Gb  r_cg_main.o [1]
+_mode2                  0xfffe3d94   0x17  Code  Gb  r_cg_main.o [1]
+_mode3                  0xfffe3d5d   0x37  Code  Gb  r_cg_main.o [1]
+_mode4                  0xfffe3d40   0x1d  Code  Gb  r_cg_main.o [1]
+_ov7725_vsync           0x000003c5    0x1  Data  Gb  r_cg_icu_user.o [1]
+_r_brk_exception        0xfffe41c3    0x2  Code  Gb  r_cg_intprg.o [1]
+_r_icu_irq5_interrupt   0xfffe2e9a   0x4e  Code  Lc  r_cg_icu_user.o [1]
+_r_sci1_callback_receiveend
+                        0xfffe3c90    0x1  Code  Lc  r_cg_sci_user.o [1]
+_r_sci1_callback_receiveerror
+                        0xfffe3d06    0x1  Code  Lc  r_cg_sci_user.o [1]
+_r_sci1_callback_transmitend
+                        0xfffe3c50    0x1  Code  Lc  r_cg_sci_user.o [1]
+_r_sci1_receive_interrupt
+                        0xfffe3c91   0x75  Code  Lc  r_cg_sci_user.o [1]
+_r_sci1_receiveerror_interrupt
+                        0xfffe3d07   0x39  Code  Lc  r_cg_sci_user.o [1]
+_r_sci1_transmit_interrupt
+                        0xfffe3bfc   0x54  Code  Lc  r_cg_sci_user.o [1]
+_r_sci1_transmitend_interrupt
+                        0xfffe3c51   0x3f  Code  Lc  r_cg_sci_user.o [1]
+_sprintf                0xfffe2ee8   0x2f  Code  Gb  sprintf.o [4]
+_st7735s_dir            0x000003be    0x1  Data  Gb  lcd_st7735s.o [1]
+_st7735s_h              0x00000004    0x2  Data  Gb  lcd_st7735s.o [1]
+_st7735s_w              0x00000006    0x2  Data  Gb  lcd_st7735s.o [1]
+_strlen                 0xfffe37d4    0xe  Code  Gb  strlen.o [4]
+_temp                   0x000003c6    0x1  Data  Gb  r_cg_main.o [1]
+_vector_table           0xfffe37fc  0x400  Data  Gb  interrupt_table.o [4]
+_x1                     0x00000097    0x1  Data  Gb  r_cg_main.o [1]
+_x2                     0x00000098    0x1  Data  Gb  r_cg_main.o [1]
+_x3                     0x00000099    0x1  Data  Gb  r_cg_main.o [1]
+_x4                     0x0000009a    0x1  Data  Gb  r_cg_main.o [1]
+
+
+[1] = D:\rx23t_baseflight\Debug\Obj
+[2] = command line
+[3] = dbgrxflld.a
+[4] = dlrxflln.a
+[5] = strx2l.a
+
+  13 935 bytes of readonly  code memory
+   3 029 bytes of readonly  data memory
+   5 058 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
